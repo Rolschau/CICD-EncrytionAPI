@@ -18,10 +18,10 @@ jobs:
           dotnet-version: '8.x'
     
       - name: Restore dependencies
-        run: dotnet restore **/EncryptionAPI.csproj
+        run: dotnet restore 
 
       - name: Build
-        run: dotnet build --configuration Release --project **/EncryptionAPI.csproj
+        run: dotnet build EncryptionAPI.sln--configuration Release 
 
       - name: Test
         run: dotnet test --project **/EncryptionAPI.csproj
