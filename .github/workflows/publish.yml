@@ -17,7 +17,7 @@ jobs:
         with:
           dotnet-version: '8.x'
       - name: Restore dependencies
-        run: dotnet restore EncryptionAPI\EncryptionAPI.csproj
+        run: dotnet restore  **\EncryptionAPI.csproj
 
 
       - name: Build
