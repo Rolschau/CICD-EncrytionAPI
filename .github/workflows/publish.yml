@@ -17,7 +17,7 @@ jobs:
         with:
           dotnet-version: '8.x'
       - name: Restore dependencies
-        run: dotnet restore C:\Users\ivyan\source\repos\CICD-EncryptionAPI\EncryptionAPI\EncryptionAPI.csproj
+        run: dotnet restore "C:\Users\ivyan\source\repos\CICD-EncryptionAPI\EncryptionAPI\EncryptionAPI.csproj"
 
 
       - name: Build
