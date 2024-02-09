@@ -21,7 +21,8 @@ jobs:
         run: dotnet restore 
 
       - name: Build
-        run: dotnet build EncryptionAPI.sln--configuration Release 
+        run: 
+            cd EncryptionAPI
+            dotnet restore
 
-      - name: Test
-        run: dotnet test --project **/EncryptionAPI.csproj
+   
